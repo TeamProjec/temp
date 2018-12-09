@@ -1,0 +1,31 @@
+sudo apt-get update
+
+sudo apt-get install python3-matplotlib
+sudo apt-get install python3-scipy
+sudo pip3 install --upgrade pip
+sudo reboot
+
+# 주피터 설치
+sudo pip3 install jupyter
+
+# 비밀번호 설정
+jupyter notebook password
+
+# 주피터 설정
+# http://surpassing.tistory.com/824
+# https://m.blog.naver.com/PostView.nhn?blogId=ryu_0108&logNo=221198479418&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F
+# c.NotebookApp.open_browser = False
+# c.NotebookApp.port = 8888
+# c.NotebookApp.ip = '0.0.0.0'
+
+# 실행
+jupyter notebook
+
+# R언어 추가방법
+# IRkernel 필요함!
+# https://irkernel.github.io/installation/
+
+sudo apt-get install r-base r-base-dev
+R
+install.packages('IRkernel')
+IRkernel::installspec(user = FALSE)

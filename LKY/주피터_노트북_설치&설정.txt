@@ -1,0 +1,15 @@
+sudo apt-get update
+
+sudo apt-get install python3-matplotlib
+sudo apt-get install python3-scipy
+sudo pip3 install --upgrade pip
+sudo reboot
+
+# 주피터 설치
+sudo pip3 install jupyter
+
+# 비밀번호 설정
+jupyter notebook password
+
+# 실행
+jupyter notebook
